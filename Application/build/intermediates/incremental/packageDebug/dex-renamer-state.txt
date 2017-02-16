@@ -1,0 +1,7 @@
+#Wed Oct 26 14:30:02 EDT 2016
+base.0=C\:\\Users\\alejandro\\Documents\\Android\\BasicGestureDetect\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_a095707b32f5b5f07bcdfbf15a46be34bcf41175
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\alejandro\\Documents\\Android\\BasicGestureDetect\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_aa304811461daeb34e2df3db9aa06001a3dd0a8f\\classes.dex
+base.1=C\:\\Users\\alejandro\\Documents\\Android\\BasicGestureDetect\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_aa304811461daeb34e2df3db9aa06001a3dd0a8f
+file.0=C\:\\Users\\alejandro\\Documents\\Android\\BasicGestureDetect\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_a095707b32f5b5f07bcdfbf15a46be34bcf41175\\classes.dex
