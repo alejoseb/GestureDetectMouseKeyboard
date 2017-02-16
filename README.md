@@ -1,14 +1,15 @@
 
-Android BasicGestureDetect Sample
+Android GestureDetectMouseKeyboard
 ===================================
 
-This sample detects gestures on a view, logs them and send UDP packages to control the mouse and keyboard of a Windows/Linux PC. In order to try this sample out, you need a server running on your PC and this app installed in your Android device.
+This projetc detects gestures on a view, logs them and send UDP packages to control the mouse and keyboard of a Windows/Linux PC. In order to try this sample out, you need a server running on your PC and this app installed in your Android device.
 
 Introduction
 ------------
-This project is based on the sample provided in the official documentation for Detecting Common Gestures [CommonGestures] [1]. I added a simple UDP connection to send gestures to a PC, which is running a python server that controls the mouse and keyboard of the PC. This server uses the PyMouse and PyKeyboard libraries. Currently, I am using this APP and server to control a RaspberryPI, there are other pay and free solutions, but this is very simple and works perfect for me. I included original documentation of the project for furthre review.
+This project is based on the official sample for Detecting Common Gestures [CommonGestures] [1]. I added a simple UDP connection to send gestures to a PC, which is running a python server that controls the mouse and keyboard of the PC. This server uses the PyMouse and PyKeyboard libraries. Therefore, prerequisites of these libraries must be installed before running the server.
+Currently, I am using this APP and server to control my RaspberryPI. There are other payed and free solutions, but this one is very simple and works adequately. I included part of the original documentation for further review.
 
-In this sample, the gestures are detected using a custom gesture listener that extends
+In this project, the gestures are detected using a custom gesture listener that extends
 [SimpleOnGestureListener][2] and writes the detected [MotionEvent][3] into the log.
 
 In this example, the steps followed to set up the gesture detector are:
