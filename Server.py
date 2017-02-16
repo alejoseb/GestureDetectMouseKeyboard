@@ -4,7 +4,9 @@
 # Currently it supports mouse movements, click, double click and keyboard inputs
 # The keyboard does not support backspace, because this key cannot be captured in the Android APP as part of the text of a view.
 # Solving this issue requires to extend the view class, and it would be included in future versions.
-# To run this server just execute the script, and modify the Android APP, using the IP address of the server. 
+# To run this server just execute the script, and modify the Android APP, using the IP address of the server.
+# To change the IP address you have to modify the file /Application/src/main/java/com/example/android/basicgesturedetect/GestureListener.java
+
 
 import os, os.path
 from pymouse import PyMouse
