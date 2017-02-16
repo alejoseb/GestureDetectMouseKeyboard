@@ -2,24 +2,25 @@
 Android BasicGestureDetect Sample
 ===================================
 
-This sample detects gestures on a view and logs them. In order to try this
-sample out, try dragging or tapping the text.
+This sample detects gestures on a view, logs them and send UDP packages to control the mouse and keyboard of a Windows/Linux PC. In order to try this sample out, you need a server running on your PC and this app installed in your Android device.
 
 Introduction
 ------------
+This project is based on the sample provided in the official documentation for Detecting Common Gestures [CommonGestures] [1]. I added a simple UDP connection to send gestures to a PC, which is running a python server that controls the mouse and keyboard of the PC. This server uses the PyMouse and PyKeyboard libraries. Currently, I am using this APP and server to control a RaspberryPI, there are other pay and free solutions, but this is very simple and works perfect for me. I included original documentation of the project for furthre review.
 
 In this sample, the gestures are detected using a custom gesture listener that extends
-[SimpleOnGestureListener][1] and writes the detected [MotionEvent][2] into the log.
+[SimpleOnGestureListener][2] and writes the detected [MotionEvent][3] into the log.
 
 In this example, the steps followed to set up the gesture detector are:
 1. Create the GestureListener that includes all your callbacks.
-2. Create the GestureDetector ([SimpleOnGestureListener][1]) that will take the listener as an argument.
-3. For the view where the gestures will occur, create an [onTouchListener][3]
+2. Create the GestureDetector ([SimpleOnGestureListener][2]) that will take the listener as an argument.
+3. For the view where the gestures will occur, create an [onTouchListener][4]
 that sends all motion events to the gesture detector.
 
-[1]: http://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html
-[2]: http://developer.android.com/reference/android/view/MotionEvent.html
-[3]: http://developer.android.com/reference/android/view/View.OnTouchListener.html
+[1]: https://developer.android.com/training/gestures/detector.html
+[2]: http://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html
+[3]: http://developer.android.com/reference/android/view/MotionEvent.html
+[4]: http://developer.android.com/reference/android/view/View.OnTouchListener.html
 
 Pre-requisites
 --------------
