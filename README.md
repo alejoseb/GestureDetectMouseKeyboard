@@ -6,7 +6,7 @@ This projetc detects gestures on a view, logs them and send UDP packages to cont
 
 Introduction
 ------------
-This project is based on the official sample for Detecting Common Gestures [CommonGestures] [1]. I added a simple UDP connection to send gestures to a PC, which is running a python server that controls the mouse and keyboard of the PC. This server uses the PyMouse and PyKeyboard libraries. Therefore, prerequisites of these libraries must be installed before running the server.
+This project is based on the official sample for Detecting Common Gestures [CommonGestures] [1]. I added a simple UDP connection to send gestures to a PC, which is running a python script [server][5] that receives the gestures and controls the mouse and keyboard of the PC. This server uses the PyMouse and PyKeyboard libraries. Therefore, prerequisites of these libraries must be installed before running the server.
 Currently, I am using this APP and server to control my RaspberryPI. There are other payed and free solutions, but this one is very simple and works adequately. I included part of the original documentation for further review.
 
 In this project, the gestures are detected using a custom gesture listener that extends
@@ -22,7 +22,7 @@ that sends all motion events to the gesture detector.
 [2]: http://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html
 [3]: http://developer.android.com/reference/android/view/MotionEvent.html
 [4]: http://developer.android.com/reference/android/view/View.OnTouchListener.html
-
+[5]: https://github.com/alejoseb/GestureDetectMouseKeyboard/blob/master/Server.py
 Pre-requisites
 --------------
 
